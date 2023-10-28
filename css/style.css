@@ -16,7 +16,7 @@ body{
     align-items: center;
 }
 .navbar .navbar-brand h1>span{
-    color: rgb(241, 130, 39);
+    color: #DA4754;
 }
 .navbar .navbar-nav{
     list-style: none;
@@ -30,10 +30,15 @@ body{
     justify-content: center;
     font-weight: 400;
 }
+.navbar .navbar-nav li a:hover{
+    color: #DA4754;
+    transition: 0.3s;
+}
+
 .navbar .icon{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, 50px)) ;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 40px)) ;
     justify-content: end;
     justify-items: end;
 }
@@ -41,5 +46,41 @@ body{
     color: #000;
     font-size: 1.1em;
 }
+.navbar .icon li a:hover{
+    color: #DA4754;
+    transition: 0.3s;
+}
 /*  end navigation */
 
+/* header hero*/
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+.header img{
+    width: 500px;
+}
+.header article h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+.header article h1{
+
+    font-size: 3em;
+    font-weight: 900;
+}
+.header article p{
+    font-size: 0.9em;
+    margin: 5px 0px 25px;
+}
+.header article a{
+    background-color: #DA4754;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
