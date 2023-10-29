@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    width: 1200px;
+    max-width: 1200px;
     margin:auto;
 }
 /* navigation */
@@ -55,28 +55,36 @@ body{
 /* header hero*/
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    background-color: #f1f1f1;
+    grid-template-areas: 
+    'hero hero hero'
+    'best-seller1 best-seller2 best-seller3';
+    gap: 10px;
 }
-.header img{
+.header .hero{
+    display: flex;
+    background-color: #f1f1f1;
+    grid-area: hero;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.header .hero img{
     width: 500px;
 }
-.header article h2{
+.header .hero article h2{
     font-size: 2em;
     font-weight: 600;
 }
-.header article h1{
-
+.header .hero article h1{
     font-size: 3em;
     font-weight: 900;
 }
-.header article p{
+.header .hero article p{
     font-size: 0.9em;
     margin: 5px 0px 25px;
 }
-.header article a{
+.header .hero article a{
     background-color: #DA4754;
     padding: 8px 20px;
     border-radius: 30px;
@@ -84,3 +92,51 @@ body{
     color: #fff;
     font-weight: 600;
 }
+.header .best-seller{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    height: 200px;
+}
+.header .best-seller h2{
+    color: #DA4754;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.header .best-seller h1{
+    font-size: 1.9em;
+    font-weight: 700;
+}
+.header .best-seller p{
+    font-size: 0.9em;
+}
+.header .best-seller p>span{
+    color: #DA4754;
+}
+.header .best-seller img{
+    width: 150px;
+}
+.header .best-seller ion-icon{
+    font-size: 1.5em;
+    color: #DA4754;
+    padding-top: 10px;
+}
+.header .best-seller1{
+    grid-area: best-seller1;
+    background-color: #FEF2E6;
+}
+.header .best-seller2{
+    grid-area: best-seller2;
+    background-color: #E8F2F4;
+}
+.header .best-seller3{
+    grid-area: best-seller3;
+    background-color: #FEF2E6;
+}
+/* end header */
+
+/* main-content */
+
+/* end main-content */
