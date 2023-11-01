@@ -138,13 +138,16 @@ body{
 /* end header */
 
 /* main-content */
+main{
+    margin-bottom: 30px;
+}
 main .text-heading{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-h1{
+main h1{
     text-align: center;
     border-bottom: 3px solid #000;
     width: 15%;
@@ -200,6 +203,61 @@ main .row .content .text-content h4{
 }
 main .row .content .text-content p{
     color: #DA4754;
-    font-weight: 500;
+    font-weight: 600;
 }
 /* end main-content */
+
+/* footer */
+footer{
+    background-color: #E8F2F4;
+    padding: 20px;
+}
+footer .logo h1>span{
+    color: #DA4754;
+}
+
+footer .logo h1{
+    font-size: 1.9em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer .isi{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .isi .keterangan p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+footer .isi .keterangan p>ion-icon{
+    font-size: 2em;
+}
+footer .isi .presale a,p{
+    text-decoration: none;
+    color:#000;
+    padding: 8px 0px 8px;
+}
+footer .isi .tentang-kami a{
+    text-decoration: none;
+    padding-top: 8px;
+}
+footer .isi .tentang-kami a>p{
+    margin-bottom: 20px;
+}
+footer .isi .tentang-kami .media-sosial{
+    display: flex;
+    gap: 10px;
+}
+footer .isi .tentang-kami .media-sosial a ion-icon{
+    font-size: 1.5em;
+    color: #DA4754;
+}
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+/* end footer */
