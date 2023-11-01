@@ -34,7 +34,6 @@ body{
     color: #DA4754;
     transition: 0.3s;
 }
-
 .navbar .icon{
     list-style: none;
     display: grid;
@@ -59,6 +58,7 @@ body{
     'hero hero hero'
     'best-seller1 best-seller2 best-seller3';
     gap: 10px;
+    margin-bottom: 60px;
 }
 .header .hero{
     display: flex;
@@ -138,5 +138,68 @@ body{
 /* end header */
 
 /* main-content */
+main .text-heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    border-bottom: 3px solid #000;
+    width: 15%;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+main .navigation-package{
+    list-style: none;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px)) ;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+main .navigation-package li a{
+    text-decoration: none;
+    color: #DA4754;
+}
+main .navigation-package li a:hover{
+    border-bottom: 2px solid #DA4754;
+    transition: 0.9ms;
+    padding-bottom: 3px;
+}
 
+main .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+
+}
+main .row .content .picture{
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+main .row .content .picture img{
+    width: 140px;
+    height: 200px;
+}
+main .row .content .text-content{
+    text-align: center;
+    padding: 10px 0px 30px;
+}
+main .row .content .text-content h4{
+    color: #000;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+main .row .content .text-content p{
+    color: #DA4754;
+    font-weight: 500;
+}
 /* end main-content */
